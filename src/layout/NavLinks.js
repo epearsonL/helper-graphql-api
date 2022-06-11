@@ -7,12 +7,6 @@ import Posts from "./assets/table.jpg";
 const NavLinks = {
     data: [
         {
-            name: "Potfolio",
-            icon: "track_changes",
-            url: "/portfolio",
-            image: Portfolio
-        },
-        {
             name: "Posts",
             icon: "store_mall_directory",
             url: "/posts",
@@ -31,7 +25,7 @@ const NavLinks = {
             image: Maps
         },
         {
-            name: "Likes",
+            name: "Potfolio",
             icon: "track_changes",
             url: "/portfolio",
             image: Portfolio

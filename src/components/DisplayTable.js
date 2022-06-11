@@ -4,6 +4,7 @@ import { CircularProgress, Button } from "@material-ui/core"
 import { ACTIONS } from '../reducers/modalReducer'
 import GeneralTable from "./GeneralTable"
 import CollapsibleRow from '../pages/CollapsibleRow'
+import { GeneralDatePicker } from './GeneralDatePicker';
 
 const AddNew = () => {
   return (
@@ -65,6 +66,8 @@ const DisplayTable = ({dispatch, data, isLoading}) => {
   }
 
   return (
+    <>
+    <GeneralDatePicker />
     <GeneralTable
      detailPanelType="single"
      detailPanel={(rowData) => {
@@ -111,6 +114,7 @@ const DisplayTable = ({dispatch, data, isLoading}) => {
       //     })
       // }}
     />
+    </>
   )
 }
 
